@@ -19,23 +19,5 @@ chmod +x install.sh
 ```shell
 sudo ./install.sh
 ```
-## Working
-```mermaid
-graph TD;
-A([Start Stop])-->B{Insert: 1 to shutdown,<br>2 to suspend or<br>3 to reboot}
 
-B-- 1:shutdown -->C{Do you want to<BR> add a timer?:}
-
-C--No--> F[sudo shutdown now]-->J
-
-C -- yes --> H>'How long doyou want the timer?'] --> G[/Define: timer as a number/] -->I[ 'sudo shutdown -H ' + timer]-->J
-
-
-
-B-- 2:suspend -->D[sudo systemctl supend -i]-->J
-B-- 3:reboot -->E[sudo reboot] -->J([End])
-
-
-	
-```
 
