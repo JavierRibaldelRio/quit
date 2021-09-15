@@ -1,0 +1,26 @@
+/*Variables*/
+
+:root {
+    /*Paleta*/
+    --rich-black: #002626ff;
+    /*Gris*/
+    --cornflower-blue: #858ae3ff;
+    /*Azul-morado*/
+    --morning-blue: #81a094ff;
+    /*Azul claro*/
+    --snow: #fffbffff;
+    /*Blanco-nive*/
+    --auburn: #a52422ff;
+    /*rojo hoja*/
+}
+
+#barra_arriba {
+    /*Lo hace un flex*/
+    display: flex;
+    /*Hace que el contenido este separado lo más posible entre si*/
+    justify-content: space-between;
+    /*Los alinea al centro de la barra en el eje Y*/
+    align-items: center;
+    /*Hace que este en una fila*/
+    flex-direction: row;
+}
