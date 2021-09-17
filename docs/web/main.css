@@ -1,3 +1,6 @@
+/*Tipografías*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap');
 /*Variables*/
 
 :root {
@@ -8,10 +11,27 @@
     /*Azul-morado*/
     --morning-blue: #81a094ff;
     /*Azul claro*/
-    --snow: #fffbffff;
-    /*Blanco-nive*/
+    --flame: #ec4e20ff;
+    /*Fllama-nive*/
     --auburn: #a52422ff;
     /*rojo hoja*/
+    /*Verde Pera*/
+    --pera: #D1E231;
+    /*Base*/
+    --tamanyo-barra: 8vh;
+}
+
+/*Poner a cero el contador*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+}
+
+main {
+    /*Pone de fondo al main el color */
+    font-size: 3vmin;
 }
 
 #barra_arriba {
@@ -23,4 +43,63 @@
     align-items: center;
     /*Hace que este en una fila*/
     flex-direction: row;
+    background-color: var(--morning-blue, blue);
+    position: fixed;
+    padding: 10px;
+    width: 100%;
+    height: var(--tamanyo-barra);
+    color: white;
+}
+
+#about {
+    /*Añade margen al css*/
+    margin-top: var(--tamanyo-barra);
+    background-color: var(--pera);
+    /*Miscelanea*/
+    font-size: 3.5vmin;
+    color: var(--rich-black);
+}
+
+h1, h2 {
+    font-size: 5vmin;
+}
+
+iframe {
+    width: 50vw;
+    height: 55vh;
+    margin-top: 4vh;
+    border: white solid 0.5vmin;
+}
+
+.link_nav {
+    text-decoration: none;
+    color: white;
+    margin-right: 10vmin;
+    font-size: 3.5vmin;
+}
+
+#features {
+    background-color: white;
+}
+
+.flex-centro {
+    /*Flex*/
+    display: flex;
+    flex-direction: column;
+    /*Tamanyo flex*/
+    width: 100%;
+    height: 100%;
+    /*Centra el contenido dle flex*/
+    align-items: center;
+    justify-content: center;
+    padding: 4vmin;
+}
+
+#fea_cua {
+    background-color: var(--pera);
+    padding: 5vmin;
+    text-align: center;
+    line-height: 5vh;
+    margin-top: 2vh;
+    border-radius: 10%;
 }
