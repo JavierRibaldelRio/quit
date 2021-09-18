@@ -57,11 +57,13 @@ main {
     background-color: var(--pera);
     /*Miscelanea*/
     font-size: 3.5vmin;
+    height: 70vh;
     color: var(--rich-black);
 }
 
 h1, h2 {
     font-size: 5vmin;
+    text-align: center;
 }
 
 iframe {
@@ -87,19 +89,48 @@ iframe {
     display: flex;
     flex-direction: column;
     /*Tamanyo flex*/
-    width: 100%;
-    height: 100%;
+    width: auto;
     /*Centra el contenido dle flex*/
     align-items: center;
     justify-content: center;
     padding: 4vmin;
 }
 
-#fea_cua {
+.cuadrado_verde {
     background-color: var(--pera);
     padding: 5vmin;
     text-align: center;
     line-height: 5vh;
     margin-top: 2vh;
     border-radius: 10%;
+}
+
+#reque {
+    background-color: var(--pera);
+    text-align: center;
+    margin-top: 4vh;
+}
+
+#reque p {
+    background-color: white;
+    border-radius: 10%;
+    padding: 10vh;
+    margin-top: 5vh;
+}
+
+#insta .cuadrado_verde {
+    margin: 2vh 25% 0;
+}
+
+footer {
+    display: flex;
+    width: auto;
+    background-color: var(--morning-blue, grey);
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h2 {
+    color: white;
 }
