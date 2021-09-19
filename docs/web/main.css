@@ -123,14 +123,36 @@ iframe {
 }
 
 footer {
-    display: flex;
-    width: auto;
+    width: 100%;
     background-color: var(--morning-blue, grey);
-    height: 50vh;
-    align-items: center;
-    justify-content: center;
+    height: 60vh;
+    text-align: center;
+    padding: 2vh 2vw;
 }
 
-footer h2 {
+footer, h2 {
     color: white;
+    margin-top: 2vh;
+}
+
+#zona_conta {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 40vh;
+}
+
+footer, section, img {
+    width: auto;
+    max-height: 100%;
+}
+
+footer, p {
+    margin-top: 3vmin;
+}
+
+#email {
+    width: auto;
+    max-height: 8vh;
 }
