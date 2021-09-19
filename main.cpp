@@ -42,17 +42,22 @@ int main()
 
             string comando = "sudo shutdown -H " + preguntarTiempo();
 
-            cout << comando;
-
             system((comando.c_str())); //Transforma el comando par aque la terminal lo pueda entender
+            
+                        cout <<endl;
+            cout <<endl;
+
         }
         else
         {
             //Apagar
 
             system("sudo shutdown now");
-        }
+            cout <<endl;
+                        cout <<endl;
 
+        }
+        
         break;
 
     case 2:
