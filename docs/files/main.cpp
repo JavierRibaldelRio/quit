@@ -1,1 +1,0 @@
-/home/javi/Programacion/C++/Stop/main.cpp
