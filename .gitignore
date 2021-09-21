@@ -34,3 +34,13 @@
 #IDE settings
 
 .vscode
+
+# Other
+compile
+build.log
+clean.log
+make.log
+.previous_build
+.current_build
+*.defines
+missed.txt
