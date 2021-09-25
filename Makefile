@@ -70,10 +70,10 @@ am__make_running_with_option = \
   test $$has_opt = yes
 am__make_dryrun = (target_option=n; $(am__make_running_with_option))
 am__make_keepgoing = (target_option=k; $(am__make_running_with_option))
-pkgdatadir = $(datadir)/stop
-pkgincludedir = $(includedir)/stop
-pkglibdir = $(libdir)/stop
-pkglibexecdir = $(libexecdir)/stop
+pkgdatadir = $(datadir)/quit
+pkgincludedir = $(includedir)/quit
+pkglibdir = $(libdir)/quit
+pkglibexecdir = $(libexecdir)/quit
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 install_sh_DATA = $(install_sh) -c -m 644
 install_sh_PROGRAM = $(install_sh) -c
@@ -86,7 +86,7 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-bin_PROGRAMS = stop$(EXEEXT)
+bin_PROGRAMS = quit$(EXEEXT)
 subdir = .
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/configure.ac
@@ -101,9 +101,9 @@ CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
-am_stop_OBJECTS = main.$(OBJEXT)
-stop_OBJECTS = $(am_stop_OBJECTS)
-stop_LDADD = $(LDADD)
+am_quit_OBJECTS = main.$(OBJEXT)
+quit_OBJECTS = $(am_quit_OBJECTS)
+quit_LDADD = $(LDADD)
 AM_V_P = $(am__v_P_$(V))
 am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))
 am__v_P_0 = false
@@ -134,8 +134,8 @@ AM_V_CXXLD = $(am__v_CXXLD_$(V))
 am__v_CXXLD_ = $(am__v_CXXLD_$(AM_DEFAULT_VERBOSITY))
 am__v_CXXLD_0 = @echo "  CXXLD   " $@;
 am__v_CXXLD_1 = 
-SOURCES = $(stop_SOURCES)
-DIST_SOURCES = $(stop_SOURCES)
+SOURCES = $(quit_SOURCES)
+DIST_SOURCES = $(quit_SOURCES)
 am__can_run_installinfo = \
   case $$AM_UPDATE_INFO_DIR in \
     n|no|NO) false;; \
@@ -199,7 +199,7 @@ CXX = g++
 CXXDEPMODE = depmode=gcc3
 CXXFLAGS = -g -O2
 CYGPATH_W = echo
-DEFS = -DPACKAGE_NAME=\"stop\" -DPACKAGE_TARNAME=\"stop\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"stop\ 1.0\" -DPACKAGE_BUGREPORT=\"javierribal@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"stop\" -DVERSION=\"1.0\"
+DEFS = -DPACKAGE_NAME=\"quit\" -DPACKAGE_TARNAME=\"quit\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"quit\ 1.0\" -DPACKAGE_BUGREPORT=\"javierribal@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"quit\" -DVERSION=\"1.0\"
 DEPDIR = .deps
 ECHO_C = 
 ECHO_N = -n
@@ -217,11 +217,11 @@ LTLIBOBJS =
 MAKEINFO = ${SHELL} '/home/javi/Programacion/C++/Stop/missing' makeinfo
 MKDIR_P = /usr/bin/mkdir -p
 OBJEXT = o
-PACKAGE = stop
+PACKAGE = quit
 PACKAGE_BUGREPORT = javierribal@gmail.com
-PACKAGE_NAME = stop
-PACKAGE_STRING = stop 1.0
-PACKAGE_TARNAME = stop
+PACKAGE_NAME = quit
+PACKAGE_STRING = quit 1.0
+PACKAGE_TARNAME = quit
 PACKAGE_URL = 
 PACKAGE_VERSION = 1.0
 PATH_SEPARATOR = :
@@ -274,7 +274,7 @@ top_build_prefix =
 top_builddir = .
 top_srcdir = .
 AUTOMAKE_OPTIONS = foreign
-stop_SOURCES = main.cpp
+quit_SOURCES = main.cpp
 all: all-am
 
 .SUFFIXES:
@@ -355,9 +355,9 @@ uninstall-binPROGRAMS:
 clean-binPROGRAMS:
 	-test -z "$(bin_PROGRAMS)" || rm -f $(bin_PROGRAMS)
 
-stop$(EXEEXT): $(stop_OBJECTS) $(stop_DEPENDENCIES) $(EXTRA_stop_DEPENDENCIES) 
-	@rm -f stop$(EXEEXT)
-	$(AM_V_CXXLD)$(CXXLINK) $(stop_OBJECTS) $(stop_LDADD) $(LIBS)
+quit$(EXEEXT): $(quit_OBJECTS) $(quit_DEPENDENCIES) $(EXTRA_quit_DEPENDENCIES) 
+	@rm -f quit$(EXEEXT)
+	$(AM_V_CXXLD)$(CXXLINK) $(quit_OBJECTS) $(quit_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)

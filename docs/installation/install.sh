@@ -1,5 +1,5 @@
-g++ -o stop main.cpp
+g++ -o quit main.cpp
 
-chmod +x stop
+chmod +x quit
 
-mv stop /usr/bin/
+mv quit /usr/bin/

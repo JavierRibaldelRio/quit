@@ -86,7 +86,7 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-bin_PROGRAMS = stop$(EXEEXT)
+bin_PROGRAMS = quit$(EXEEXT)
 subdir = .
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/configure.ac
@@ -101,9 +101,9 @@ CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
-am_stop_OBJECTS = main.$(OBJEXT)
-stop_OBJECTS = $(am_stop_OBJECTS)
-stop_LDADD = $(LDADD)
+am_quit_OBJECTS = main.$(OBJEXT)
+quit_OBJECTS = $(am_quit_OBJECTS)
+quit_LDADD = $(LDADD)
 AM_V_P = $(am__v_P_@AM_V@)
 am__v_P_ = $(am__v_P_@AM_DEFAULT_V@)
 am__v_P_0 = false
@@ -134,8 +134,8 @@ AM_V_CXXLD = $(am__v_CXXLD_@AM_V@)
 am__v_CXXLD_ = $(am__v_CXXLD_@AM_DEFAULT_V@)
 am__v_CXXLD_0 = @echo "  CXXLD   " $@;
 am__v_CXXLD_1 = 
-SOURCES = $(stop_SOURCES)
-DIST_SOURCES = $(stop_SOURCES)
+SOURCES = $(quit_SOURCES)
+DIST_SOURCES = $(quit_SOURCES)
 am__can_run_installinfo = \
   case $$AM_UPDATE_INFO_DIR in \
     n|no|NO) false;; \
@@ -274,7 +274,7 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 AUTOMAKE_OPTIONS = foreign
-stop_SOURCES = main.cpp
+quit_SOURCES = main.cpp
 all: all-am
 
 .SUFFIXES:
@@ -355,9 +355,9 @@ uninstall-binPROGRAMS:
 clean-binPROGRAMS:
 	-test -z "$(bin_PROGRAMS)" || rm -f $(bin_PROGRAMS)
 
-stop$(EXEEXT): $(stop_OBJECTS) $(stop_DEPENDENCIES) $(EXTRA_stop_DEPENDENCIES) 
-	@rm -f stop$(EXEEXT)
-	$(AM_V_CXXLD)$(CXXLINK) $(stop_OBJECTS) $(stop_LDADD) $(LIBS)
+quit$(EXEEXT): $(quit_OBJECTS) $(quit_DEPENDENCIES) $(EXTRA_quit_DEPENDENCIES) 
+	@rm -f quit$(EXEEXT)
+	$(AM_V_CXXLD)$(CXXLINK) $(quit_OBJECTS) $(quit_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)

@@ -1,1 +1,12 @@
+#Oculta los html
 *.html linguist-detectable=false
+#Oculta los roofs
+*.2 linguist-detectable=false
+*.1 linguist-detectable=false
+#oculta el shell
+
+*config.status linguist-detectable=false
+configure linguist-detectable=false
+#oculta el make
+*in linguist-detectable=false
+Makefile linguist-detectable=false
