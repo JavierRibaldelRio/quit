@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="ico.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="0.26174249"
+     inkscape:cx="129.89866"
+     inkscape:cy="328.56721"
+     inkscape:window-width="1366"
+     inkscape:window-height="700"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g7793">
+    <sodipodi:guide
+       position="106.38806,223.54158"
+       orientation="1,0"
+       id="guide1994" />
+    <sodipodi:guide
+       position="0.32517282,86.45902"
+       orientation="1,0"
+       id="guide1996" />
+    <sodipodi:guide
+       position="209.85266,294.69495"
+       orientation="1,0"
+       id="guide1998" />
+    <sodipodi:guide
+       position="0.13695819,295.92625"
+       orientation="0,-1"
+       id="guide2000" />
+    <sodipodi:guide
+       position="8.9600012,86.400585"
+       orientation="0,-1"
+       id="guide2002" />
+    <sodipodi:guide
+       position="-155.65777,190.73364"
+       orientation="0,-1"
+       id="guide2108" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g7793"
+       transform="translate(0,21.069536)">
+      <g
+         id="g8001"
+         inkscape:export-filename="/home/javi/Desktop/Programacion/C++/Quit/docs/Snapstore/Ico/icos.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <rect
+           style="fill:none;fill-opacity:1;stroke:none;stroke-width:0.16829"
+           id="rect846"
+           width="133.27394"
+           height="133.27394"
+           x="-31.529427"
+           y="115.0641"
+           inkscape:export-filename="/home/javi/Desktop/Programacion/C++/Quit/docs/Snapstore/Ico/icos.png"
+           inkscape:export-xdpi="96"
+           inkscape:export-ydpi="96" />
+        <g
+           id="g15222"
+           inkscape:export-filename="/home/javi/Desktop/Programacion/C++/Quit/docs/Snapstore/Ico/g15222.png"
+           inkscape:export-xdpi="96"
+           inkscape:export-ydpi="96"
+           transform="translate(-69.892456,108.5765)">
+          <ellipse
+             style="fill:#273e47;fill-opacity:1;stroke:none;stroke-width:0.16829"
+             id="path1707"
+             ry="28.135719"
+             rx="8.5965014"
+             cy="51.564327"
+             cx="105"
+             inkscape:export-filename="/home/javi/Desktop/Programacion/C++/Quit/docs/Snapstore/Ico/icos.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+          <path
+             id="path2840"
+             style="fill:#273e47;fill-opacity:1;stroke-width:0.636059;stroke-miterlimit:4;stroke-dasharray:none"
+             d="m 79.74937,44.57142 c -11.269087,8.113966 -17.95245,21.14903 -17.963361,35.035304 6.1e-5,23.866306 19.347513,43.213766 43.213821,43.213816 23.86644,1.3e-4 43.21409,-19.34738 43.21416,-43.213816 -0.001,-13.875698 -6.66523,-26.906861 -17.91438,-35.030374 m 0,0 -5.84415,7.926413 c 8.7314,6.266994 13.90928,16.356284 13.90992,27.103961 -5e-5,18.427202 -14.93833,33.365346 -33.36555,33.365216 -18.427075,-5e-5 -33.36516,-14.938142 -33.365215,-33.365216 0.0088,-10.686666 5.136078,-20.722467 13.790283,-26.992205 L 79.74937,44.57142"
+             sodipodi:nodetypes="cccccccccccc"
+             inkscape:export-filename="/home/javi/Desktop/Programacion/C++/Quit/docs/Snapstore/Ico/icos.png"
+             inkscape:export-xdpi="96"
+             inkscape:export-ydpi="96" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
