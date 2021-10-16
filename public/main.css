@@ -226,9 +226,14 @@ footer, p {
     .cab {
         width: 100%;
     }
-    .cab img {}
+    .cab img {
+        max-width: 75%;
+        width: auto;
+        height: 15vh;
+    }
     .cuadrado_verde {
         margin-top: 0%;
+        max-height: 50vh;
     }
     #about {
         margin-top: 0% !important;
@@ -247,8 +252,9 @@ footer, p {
     #insta p {
         line-height: 4vmin;
     }
-    #insta iframe {
-        max-height: 100%;
+    .cuadrado_verde iframe {
         height: auto;
+        min-height: 20vh;
+        max-height: 30vh;
     }
 }
