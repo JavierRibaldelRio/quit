@@ -1,7 +1,7 @@
 #Oculta los html
 *.html linguist-detectable=false
 #Oculta Css
-*.css linguist-detectable= false
+main.css linguist-detectable= false
 #Oculta los roofs
 *.2 linguist-detectable=false
 *.1 linguist-detectable=false
