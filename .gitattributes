@@ -1,5 +1,5 @@
 #Oculta los html
-*.html linguist-detectable=false
+#*.html linguist-detectable=false
 #Oculta los roofs
 *.2 linguist-detectable=false
 *.1 linguist-detectable=false
