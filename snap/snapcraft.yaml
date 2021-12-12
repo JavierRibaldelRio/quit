@@ -15,7 +15,7 @@ confinement: strict # use 'strict' once you have the right plugs and slots
 parts:
   quit:
     plugin: autotools
-    source: https://javierribaldelrio.github.io/Quit/quit-1.0.tar.gz
+    source: https://javierribaldelrio.github.io/Quit/quit-2.0.tar.gz
     source-type: tar
     build-packages:
       - g++
