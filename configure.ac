@@ -1,4 +1,4 @@
-AC_INIT([quit], [1.0], [javierribal@gmail.com])
+AC_INIT([quit], [2.0], [javierribal@gmail.com])
 AM_INIT_AUTOMAKE
 AC_PROG_CPP
 AC_PROG_CXX
