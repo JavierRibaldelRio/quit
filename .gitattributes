@@ -7,7 +7,7 @@ public/main.css linguist-detectable=false
 *.1 linguist-detectable=false
 #oculta el shell
 
-*.shell linguist-detectable=false
+*.sh linguist-detectable=false
 
 *config.status linguist-detectable=false
 configure linguist-detectable=false
