@@ -65,6 +65,18 @@ main {
     /*Pone en brillo cero la imagen y depues la invierte*/
 }
 
+h3 {
+    padding-bottom: 4vmin;
+}
+
+code {
+    background-color: var(--morning-blue);
+    padding: 3vmin;
+    border: solid black 0.5vmin;
+    border-radius: 2vmin;
+    color: whitesmoke;
+}
+
 #about {
     /*Añade margen al css*/
     margin-top: var(--tamanyo-barra);
@@ -135,7 +147,7 @@ iframe {
 #insta .cuadrado_verde {
     margin: 2vh 25% 2vh;
     height: 110vh;
-    padding-bottom: 20vmin;
+    padding-bottom: 70vmin;
 }
 
 #insta h2 {
@@ -208,11 +220,13 @@ footer, p {
         margin-bottom: 0%;
         padding: auto;
     }
+
     #barra_arriba a {
         display: block;
         margin: 2vmin;
         padding: 1vmin;
     }
+
     #barra_arriba img {
         max-height: 10vh;
         height: auto;
@@ -220,38 +234,47 @@ footer, p {
         float: left;
         margin: 5vmin;
     }
+
     #barra_arriba h1 {
         font-size: 6vh;
     }
+
     .cab {
         width: 100%;
     }
+
     .cab img {
         max-width: 75%;
         width: auto;
         height: 15vh;
     }
+
     .cuadrado_verde {
         margin-top: 0%;
         max-height: 50vh;
     }
+
     #about {
         margin-top: 0% !important;
         padding-top: 0%;
         height: auto;
     }
+
     #video {
         max-width: 100%;
         max-height: 50%;
         height: auto;
         width: auto;
     }
+
     .flex_centro {
         padding-top: 0%;
     }
+
     #insta p {
         line-height: 4vmin;
     }
+
     .cuadrado_verde iframe {
         height: auto;
         min-height: 20vh;
