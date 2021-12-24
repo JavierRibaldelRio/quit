@@ -4,7 +4,7 @@
 [![quit](https://snapcraft.io/quit/trending.svg?name=0)](https://snapcraft.io/quit)
 
 ## Description
-Stop is an application for Linux terminal to shutdown, reboot or suspend the computer. It is developed in C++. You can also set a timed shutdown. To use it, you will need the "sudo" command. Is usually pre-installed in the system. 
+Stop is an application for Linux terminal to shutdown, reboot or suspend the computer. It is developed in C++. You can also set a timed shutdown or even a timed reboot. To use it, you will need the "sudo" command. Is usually pre-installed in the system. 
 
 ## Requirements
 
@@ -12,9 +12,11 @@ Stop is an application for Linux terminal to shutdown, reboot or suspend the com
 - sudo command
 ## Installation
 
+### Snapstore
+
 You can install Quit from Snapstore 
 ```shell
-# sudo snap install quit --classic
+# sudo snap install quit 
 ```
 <br>
 <a href="https://snapcraft.io/quit">
@@ -22,6 +24,20 @@ You can install Quit from Snapstore
 </a>
 <br>
 
-Or you can install it from the portable edition
+
+
+### AUR
+
+ For arch-based distributions
+ you can install it from the <a href="https://aur.rchlinux.org/packages/quit-git/">AUR</a>, you have to run this line</p>
+                
+```shell
+# yay -S quit-git
+
+```
+
+### Portable Release
+
+Or you can install it from the [Portable Release](ttps://javierribaldelrio.github.io/quit/quit-2.0.tar.gz)
 
 
