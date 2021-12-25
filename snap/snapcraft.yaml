@@ -10,7 +10,7 @@ description: |
   Quit is an application for Linux terminal to shutdown, reboot or suspend the computer. It is developed in C++. You can also set a timed shutdown. To use it, you will need the "sudo" command and the gcc compiler. Both are usually pre-installed in the system.
 
 grade: stable # must be 'stable' to release into candidate/stable channels
-confinement: strict # use 'strict' once you have the right plugs and slots
+confinement: classic # use 'strict' once you have the right plugs and slots
 architectures:
   - build-on: i368
 
