@@ -198,7 +198,7 @@ CXX = g++
 CXXDEPMODE = depmode=gcc3
 CXXFLAGS = -g -O2
 CYGPATH_W = echo
-DEFS = -DPACKAGE_NAME=\"quit\" -DPACKAGE_TARNAME=\"quit\" -DPACKAGE_VERSION=\"2.0\" -DPACKAGE_STRING=\"quit\ 2.0\" -DPACKAGE_BUGREPORT=\"javierribal@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"quit\" -DVERSION=\"2.0\"
+DEFS = -DPACKAGE_NAME=\"quit\" -DPACKAGE_TARNAME=\"quit\" -DPACKAGE_VERSION=\"2.2\" -DPACKAGE_STRING=\"quit\ 2.2\" -DPACKAGE_BUGREPORT=\"javierribal@gmail.com\" -DPACKAGE_URL=\"\" -DPACKAGE=\"quit\" -DVERSION=\"2.2\"
 DEPDIR = .deps
 ECHO_C = 
 ECHO_N = -n
@@ -220,15 +220,15 @@ OBJEXT = o
 PACKAGE = quit
 PACKAGE_BUGREPORT = javierribal@gmail.com
 PACKAGE_NAME = quit
-PACKAGE_STRING = quit 2.0
+PACKAGE_STRING = quit 2.2
 PACKAGE_TARNAME = quit
 PACKAGE_URL = 
-PACKAGE_VERSION = 2.0
+PACKAGE_VERSION = 2.2
 PATH_SEPARATOR = :
 SET_MAKE = 
 SHELL = /bin/sh
 STRIP = 
-VERSION = 2.0
+VERSION = 2.2
 abs_builddir = /home/javi/Desktop/Programacion/C++/Quit
 abs_srcdir = /home/javi/Desktop/Programacion/C++/Quit
 abs_top_builddir = /home/javi/Desktop/Programacion/C++/Quit
