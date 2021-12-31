@@ -4,23 +4,23 @@
 #include <unistd.h>
 
 using namespace std;
-//Variables globales
+// Variables globales
 unsigned int respuesta = 0;
 unsigned int numeroMaximoRespuestas = 5;
 
-//Funciones
-void preguntarObjetivo(); //Pregunta que quieres hacer
+// Funciones
+void preguntarObjetivo(); // Pregunta que quieres hacer
 
-string preguntarTiempo(); //Pregunta el tiempo que desea poner al temporizador
+string preguntarTiempo(); // Pregunta el tiempo que desea poner al temporizador
 
-void imprimirOpcion(string); //Imprime la oción correspondiente
+void imprimirOpcion(string); // Imprime la oción correspondiente
 
 int main()
 {
     string comando = "";
     preguntarObjetivo();
 
-    //en caso de que la respuesta de a un valor invalido
+    // en caso de que la respuesta de a un valor invalido
 
     while (::respuesta < 1 || ::respuesta > ::numeroMaximoRespuestas)
     {
@@ -29,53 +29,53 @@ int main()
         cout << "Insert a valid value" << endl;
         cout << endl;
 
-        sleep(1); //Espero 1 segundo
+        sleep(1); // Espero 1 segundo
 
         preguntarObjetivo();
     }
 
     switch (::respuesta)
     {
-    //Apagar
+    // Apagar
     case 1:
-        system("sudo shutdown now");
+        system("shutdown now");
         cout << endl;
         cout << endl;
 
         break;
 
-    //Apagado temporizado
+    // Apagado temporizado
     case 2:
 
-        comando = "sudo shutdown " + preguntarTiempo();
+        comando = "shutdown " + preguntarTiempo();
 
-        system((comando.c_str())); //Transforma el comando par aque la terminal lo pueda entender
+        system((comando.c_str())); // Transforma el comando par aque la terminal lo pueda entender
 
         cout << endl;
         cout << endl;
         break;
 
-        //reiniciar
+        // reiniciar
 
     case 3:
 
-        system("sudo reboot");
+        system("reboot");
 
         break;
 
     case 4:
 
-        comando = "sudo shutdown -r " + preguntarTiempo();
+        comando = "shutdown -r " + preguntarTiempo();
 
-        system((comando.c_str())); //Transforma el comando par aque la terminal lo pueda entender
+        system((comando.c_str())); // Transforma el comando par aque la terminal lo pueda entender
 
         cout << endl;
         cout << endl;
 
         break;
-    //suspender
+    // suspender
     case 5:
-        system(" sudo systemctl suspend -i");
+        system("systemctl suspend -i");
         break;
     }
 
@@ -85,36 +85,36 @@ int main()
 void preguntarObjetivo()
 {
 
-    //Alamacena la respuesta y lo pasa a número
+    // Alamacena la respuesta y lo pasa a número
     string respuesta = "";
 
     cout << "Insert:" << endl;
 
-    imprimirOpcion("shutdown"); //1
+    imprimirOpcion("shutdown"); // 1
 
-    imprimirOpcion("timed shutdown"); //2
+    imprimirOpcion("timed shutdown"); // 2
 
-    imprimirOpcion("reboot"); //3
+    imprimirOpcion("reboot"); // 3
 
-    imprimirOpcion("timed reboot"); //4
+    imprimirOpcion("timed reboot"); // 4
 
-    imprimirOpcion("suspend"); //5
+    imprimirOpcion("suspend"); // 5
 
     cout << ":";
 
     cin >> respuesta;
 
-    ::respuesta = atoi(respuesta.c_str()); //Combierte el string
+    ::respuesta = atoi(respuesta.c_str()); // Combierte el string
 
     cout << endl;
 }
 
-//Pregunta y devuelve el tiempo que se ha de añadir el temporizador
+// Pregunta y devuelve el tiempo que se ha de añadir el temporizador
 string preguntarTiempo()
 {
-    int devolucion = 0; //Almacena lo que se va a devolver
+    int devolucion = 0; // Almacena lo que se va a devolver
 
-    string respuesta = ""; //Almacena la respuesta
+    string respuesta = ""; // Almacena la respuesta
 
     while (devolucion < 1)
     {
@@ -124,18 +124,18 @@ string preguntarTiempo()
 
         cin >> respuesta;
 
-        devolucion = atoi(respuesta.c_str()); //Combierte la respuesta en un int
+        devolucion = atoi(respuesta.c_str()); // Combierte la respuesta en un int
 
         if (devolucion < 1)
         {
             cout << "Insert a valid value" << endl;
             cout << endl;
 
-            //borra la pantalla
+            // borra la pantalla
 
-            sleep(1); //Espero 1 segundo
+            sleep(1); // Espero 1 segundo
 
-            system("clear"); //borra la pantalla
+            system("clear"); // borra la pantalla
         }
     }
 
