@@ -36,7 +36,6 @@
 .vscode
 
 # Other
-compile
 build.log
 clean.log
 make.log
@@ -63,7 +62,6 @@ autom4te.cache
 /autoscan.log
 /autoscan-*.log
 /aclocal.m4
-/compile
 /config.cache
 /config.guess
 /config.h.in
