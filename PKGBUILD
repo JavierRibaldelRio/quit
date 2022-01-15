@@ -5,7 +5,7 @@
 
 # Maintainer: Javier Ribal del Río <javierribal@gmail.com>
 pkgname=quit-git
-pkgver=2.0.r120.fc4f28c
+pkgver=2.0.r124.59b5608
 pkgrel=1
 epoch=
 pkgdesc="Quit is an application for Linux terminal to shutdown, reboot or suspend the computer. You can also set a timed shutdown or a timed reboot."
@@ -36,7 +36,7 @@ pkgver() {
 
 build() {
 	cd quit
-	./configure --prefix=/usr
+	./configure
 	make X11INC=/usr/include/X11 X11LIB=/usr/lib/X11
 }
 
