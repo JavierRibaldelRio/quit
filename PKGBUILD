@@ -1,33 +1,15 @@
-# This is an example PKGBUILD file. Use this as a start to creating your own,
-# and remove these comments. For more information, see 'man PKGBUILD'.
-# NOTE: Please fill out the license field for your package! If it is unknown,
-# then please put 'unknown'.
-
 # Maintainer: Javier Ribal del Río <javierribal@gmail.com>
-pkgname=quit-git
-pkgver=2.0.r124.59b5608
+pkgname='quit-git'
+pkgver=2.0.r.59b5608
 pkgrel=1
-epoch=
 pkgdesc="Quit is an application for Linux terminal to shutdown, reboot or suspend the computer. You can also set a timed shutdown or a timed reboot."
-arch=(x86_64 i686)
-url="https://github.com/JavierRibaldelRio/quit.git"
-license=('MIT ')
-groups=()
-depends=()
+arch=('x86_64')
+url="https://javierribaldelrio.github.io/quit/"
+license=('MIT')
 makedepends=(git)
-checkdepends=()
-optdepends=()
-provides=(quit)
-conflicts=(quit)
-replaces=()
-backup=()
-options=()
-install=
-changelog=
-source=("git+$url")
-noextract=()
+provides=('quit')
+source=("quit-git::https://github.com/JavierRibaldelRio/quit.git")
 md5sums=('SKIP')
-validpgpkeys=()
 
 pkgver() {
 	cd quit
@@ -37,7 +19,7 @@ pkgver() {
 build() {
 	cd quit
 	./configure
-	make X11INC=/usr/include/X11 X11LIB=/usr/lib/X11
+	make
 }
 
 check() {
@@ -47,9 +29,9 @@ check() {
 
 package() {
 	cd quit
-	mkdir -p ${pkgdir}/opt/${pkgname}
-	cp -rf * ${pkgdir}/opt/${pkgname}
+	mkdir -p ${pkgdir}/opt/quit
+	cp -rf * ${pkgdir}/opt/quit
 	make PREFIX=/usr DESTDIR="{$pkgdir}" install
-	install -Dm644 LICENSE.md "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE.md"
-	install -Dm64 README.md "${pkgdir}/usr/share/doc/${pkgname}/README.md"
+	install -Dm644 LICENSE.md "${pkgdir}/usr/share/licenses/quit/LICENSE.md"
+	install -Dm64 README.md "${pkgdir}/usr/share/doc/quit/README.md"
 }
