@@ -29,8 +29,7 @@ check() {
 
 package() {
 	cd quit
-	make install
-	# 	mkdir -p ${pkgdir}/opt/quit
+	make DESTDIR="$pkgdir/" install # 	mkdir -p ${pkgdir}/opt/quit
 	# 	cp -rf * ${pkgdir}/opt/quit
 	# 	make PREFIX=/usr DESTDIR="{$pkgdir}" install
 	# 	install -Dm644 LICENSE.md "${pkgdir}/usr/share/licenses/quit/LICENSE.md"
