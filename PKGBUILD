@@ -1,18 +1,19 @@
 # Maintainer: Javier Ribal del Río <javierribal@gmail.com>
-pkgname='quit'
-pkgver=r126.e133a69
+pkgname='quit-git'
+pkgver=r130.4c081b8
 pkgrel=1
-pkgdesc="Quit is an application for Linux terminal to shutdown, reboot or suspend the computer. You can also set a timed shutdown or a timed reboot."
+pkgdesc="Application for Linux terminal to shutdown, reboot or suspend the computer. You can also set a timed shutdown or a timed reboot."
 arch=('x86_64')
 url="https://github.com/JavierRibaldelRio/quit.git"
 license=('MIT')
+depends=('gcc-libs' 'glibc')
 makedepends=('git')
 provides=('quit')
-source=("quit::git://github.com/JavierRibaldelRio/quit.git")
+source=("quit-git::git://github.com/JavierRibaldelRio/quit.git")
 md5sums=('SKIP')
 
 pkgver() {
-	cd "$pkgname"
+	cd quit
 
 	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 }
