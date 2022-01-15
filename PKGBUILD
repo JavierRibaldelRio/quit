@@ -18,7 +18,7 @@ pkgver() {
 }
 build() {
 	cd quit
-	./configure
+	./configure --prefix=/usr
 	make
 }
 
@@ -29,9 +29,7 @@ check() {
 
 package() {
 	cd quit
-	make DESTDIR="$pkgdir/" install # 	mkdir -p ${pkgdir}/opt/quit
-	# 	cp -rf * ${pkgdir}/opt/quit
-	# 	make PREFIX=/usr DESTDIR="{$pkgdir}" install
-	# 	install -Dm644 LICENSE.md "${pkgdir}/usr/share/licenses/quit/LICENSE.md"
-	# 	install -Dm64 README.md "${pkgdir}/usr/share/doc/quit/README.md"
+	make DESTDIR="$pkgdir/" install
+	install -Dm644 LICENSE.md "${pkgdir}/usr/share/licenses/quit/LICENSE.md"
+	install -Dm64 README.md "${pkgdir}/usr/share/doc/quit/README.md"
 }
