@@ -13,23 +13,23 @@ source=("quit-git::git://github.com/JavierRibaldelRio/quit.git")
 md5sums=('SKIP')
 
 pkgver() {
-	cd quit
+	cd "$pkgname"
 
 	printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 }
 build() {
-	cd quit
+	cd "$pkgname"
 	./configure --prefix=/usr
 	make
 }
 
 check() {
-	cd quit
+	cd "$pkgname"
 	make -k check
 }
 
 package() {
-	cd quit
+	cd "$pkgname"
 	make DESTDIR="$pkgdir/" install
 	install -Dm644 LICENSE.md "${pkgdir}/usr/share/licenses/quit/LICENSE.md"
 	install -Dm64 README.md "${pkgdir}/usr/share/doc/quit/README.md"
