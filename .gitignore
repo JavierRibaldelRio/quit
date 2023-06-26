@@ -91,3 +91,6 @@ m4/lt~obsolete.m4
 #Otros personales
 
 *.log
+
+
+*.snap

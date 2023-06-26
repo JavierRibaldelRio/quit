@@ -1,13 +1,9 @@
-#!/bin/sh
+#! /bin/bash
 
 if [ -z "$1" ]
 then
     read -rep $'Insert:\n1 to shutdown\n2 to timed shutdown\n3 to reboot\n4 to timed reboot\n5 to suspend\n: ' ord
     
-    echo $ord
-
-    echo "hi"
-
 else
   
     ord=$1
