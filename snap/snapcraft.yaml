@@ -18,6 +18,7 @@ apps:
   quit:
     command: bin/quit.sh
     plugs:
+      - system-observe
       - shutdown
 
 parts:
