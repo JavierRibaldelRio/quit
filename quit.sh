@@ -10,30 +10,42 @@ else
 
 fi
 
+# https://askubuntu.com/questions/454039/what-command-is-executed-when-shutdown-from-the-graphical-menu-in-14-04
+
 case $ord in
-
+    # Shutdown
     1)
-        shutdown now
+        dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 "org.freedesktop.login1.Manager.PowerOff" boolean:true
         ;;
-
+    # Timed Shutdown
     2)
         read -rep  $'How long do you want the timer? (in minutes)\n: ' time
 
-        shutdown $time
-        ;;
+        echo The countdown has started, to cancel it close the terminal.
+        
+        sleep $((time*60))
 
+        dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 "org.freedesktop.login1.Manager.PowerOff" boolean:true
+
+        ;;
+    # Reboot
     3)
-        shutdown -r now
+        dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 "org.freedesktop.login1.Manager.Reboot" boolean:true
         ;;
-
+    # Timed Reboot
     4)
         read -rep  $'How long do you want the timer? (in minutes)\n: ' time
+        
+        echo The countdown has started, to cancel it close the terminal.
 
-        shutdown -r $time
+        sleep $((time*60))
+        
+        dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 "org.freedesktop.login1.Manager.Reboot" boolean:true
+
         ;;
-
+    # Suspend
     5)
-        systemctl suspend -i
+        dbus-send --system --print-reply --dest=org.freedesktop.login1 /org/freedesktop/login1 "org.freedesktop.login1.Manager.Suspend" boolean:true
         ;;
 
 esac
