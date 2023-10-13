@@ -4,7 +4,7 @@
 [![quit](https://snapcraft.io/quit/trending.svg?name=0)](https://snapcraft.io/quit)
 
 ## Description
-Stop is an application for Linux terminal to shutdown, reboot or suspend the computer. It is developed in C++. You can also set a timed shutdown or even a timed reboot. To use it, you will need the "sudo" command. Is usually pre-installed in the system. 
+Quit is an application for Linux terminal to shutdown, reboot or suspend the computer. It is developed in C++. You can also set a timed shutdown or even a timed reboot. To use it, you will need the "sudo" command. Is usually pre-installed in the system. 
 
 ## Requirements
 
